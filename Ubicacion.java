@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Ubicacion {
     
     private String departamento;
@@ -43,5 +44,13 @@ public class Ubicacion {
     public void mostrar()
     {
         System.out.println(" Departamento "+getDepartamento()+" Zona "+getZona());
+    }
+    public  void leer()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Añadir departamento");
+        departamento=sc.next();
+        System.out.println("Añadir zona");
+        zona=sc.next();
     }
 }
