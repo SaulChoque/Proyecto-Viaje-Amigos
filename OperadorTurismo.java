@@ -2,6 +2,11 @@
 import proyectomenfy.Ubicacion;
 import proyectomenfy.paquete;
 
+
+/**
+ *
+ * @author HP 2022
+ */
 public class OperadorTurismo {
     
     private String nombre;
@@ -85,16 +90,18 @@ public class OperadorTurismo {
     
         nroPaquetes=3;
     }
-    public OperadorTurismo(String n,String des,Ubicacion ubi,int tele,int nro)
+    public OperadorTurismo(String n,String des,int tele,int nro)
     {
         nombre=n;
        descripcion=des;
-       direccion=ubi;
+      
         telefono=tele;
         for (int i = 1; i < 19+1; i++) {
             paquetes[i]=new paquete();
         }
         nroPaquetes=nro;
+         direccion=new Ubicacion();
+        direccion.leer();
     }
     public void mostrar()
     {
@@ -160,3 +167,4 @@ public class OperadorTurismo {
         }
     }
 }
+
