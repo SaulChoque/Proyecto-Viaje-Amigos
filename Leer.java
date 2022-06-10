@@ -1,5 +1,9 @@
+
 /*Programa Leer,para datos de tipo Short,Int,Float,Double,Long*/
 import java.util.Scanner;
+
+
+
 import java.io.*;
 public class Leer
 { 
