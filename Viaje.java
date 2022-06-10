@@ -7,8 +7,12 @@ public class Viaje {
     private Paquete paquete;
     private int precioTotal;
     
-    public void leerAmigos() 
+    public void leerFechaAmigos() 
     {
+    	System.out.print("Introdusca la fecha de inicio del viaje (DD/MM/AA) => ");
+    	this.fechaInicio = Leer.dato();
+    	System.out.print("Introdusca la fecha final del viaje (DD/MM/AA) => ");
+    	this.fechaFinal = Leer.dato();
     	System.out.print("Introdusca el numero de amigos => ");
     	this.nroAmigos = Leer.datoInt();
 		for (int i = 0; i < this.nroAmigos; i++) {
@@ -24,8 +28,8 @@ public class Viaje {
 	}
     public void mostrar() 
     {
-		System.out.println("Fecha de Inicio: "+this.fechaInicio);
-		System.out.println("Fecha Final: "+this.fechaFinal);
+		System.out.println("Fecha de Inicio del Viaje: "+this.fechaInicio);
+		System.out.println("Fecha Final del Viaje: "+this.fechaFinal);
 		
 		
 		System.out.println("Precio Total: Bs. "+this.precioTotal);
