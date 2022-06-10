@@ -1,9 +1,9 @@
 public class Itinerario {
-    private int dia;
+    private int dia, nroActividades;
     private String actividad[][] = new String [20][2];
     
     public Itinerario() {
-        dia=1;
+        dia=0;
 
         //f1=hora
         //f2=descripcion
@@ -23,7 +23,7 @@ public class Itinerario {
     }
 
     public Itinerario(int a){
-        dia=2;
+        dia=a;
 
         actividad[7][1]="10:00";
         actividad[7][2]="Salir del Hotel para poder visitar los diferentes lagos como ser: Laguna Kañapa, Laguna Hedionda, Laguna Chiarkota, Arbol de Piedra";
@@ -32,7 +32,7 @@ public class Itinerario {
     }
 
         public Itinerario(String a){
-        dia=3;
+        dia=0;
 
         actividad[9][1]="05:00";
         actividad[9][2]="Salir de la Laguna Colorada para ver los Geysers con el salir del sol";
@@ -45,7 +45,8 @@ public class Itinerario {
         actividad[13][1]="18:30";
         actividad[13][2]="Arribo a Uyuni";
     }
-    void mostrar(){
-       
+       public void leer(){
+        
+       }
+
     }
-}
