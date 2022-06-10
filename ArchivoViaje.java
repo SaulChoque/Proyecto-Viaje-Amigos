@@ -23,14 +23,14 @@ public class ArchivoViaje {
 
     void listar() throws IOException, ClassNotFoundException
     {
-        ObjectOutputStream arch=new ObjectOutputStream(new FileOutputStream(this.nombre));
-        //Vieja vx
+        ObjectInputStream arch=new ObjectInputStream(new FileInputStream(this.nombre));
+        Viaje vx;
         try{
             while(true)
             {
-                //vx=new Viaje();
-                //vx=(Viaje) arch.readObject();
-                //vx.mostrar();
+                vx=new Viaje();
+                vx=(Viaje) arch.readObject();
+                vx.mostrar();
             }
         }catch(Exception a){
 
@@ -40,23 +40,33 @@ public class ArchivoViaje {
     }
     void adicionar() throws FileNotFoundException, IOException
     {
-        Scanner sc=new Scanner(System.in);
-        ObjectOutputStream archt=new ObjectOutputStream(new FileOutputStream("tempViejas.obj"));
-        ObjectInputStream arch=new ObjectInputStream(new FileInputStream(this.nombre));
-        //Vieja vx
-        try{
+        ObjectOutputStream archi1=new ObjectOutputStream(new FileOutputStream("architempo.obj"));
+        ObjectInputStream archi = new ObjectInputStream(new FileInputStream(this.nombre));
+        Viaje vx;
+        try
+        {    
+            while(true){
+                vx=(Viaje)archi.readObject();
+                archi1.writeObject(vx);
+            } 
+        }
+        catch(Exception e)
+        {
             do{
-                //vx=new Viaje();
-                //vx.leer();
-                //arch.writeObject(vx);
-                System.out.println("Desea seguir añadiendo  Viajes (y/n): ");
-            }while(sc.nextLine().charAt(0)=='s');
-                
-        }catch(Exception a){
-
-        }finally{
-            arch.close();
-        }        
+                vx=new Viaje();
+                vx.leerAmigos();
+                archi1.writeObject(vx);
+                System.out.print("|| Desea seguir añadiendo registros? (s/n) => ");
+            }while(System.in.read()==115);
+        }
+        finally{
+            archi1.close();
+            archi.close();
+            File farchi=new File(this.nombre);
+            File farchi1=new File("architempo.obj");
+            farchi1.renameTo(farchi);
+            System.out.println("obj adicionado ");
+        }
     }
 
 }

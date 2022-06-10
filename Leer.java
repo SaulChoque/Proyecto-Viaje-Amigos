@@ -2,22 +2,26 @@
 
 import java.io.*;
 public class Leer
-{ public static String dato ()
-    { String cadena = "";
-	try
-	{   /*InputstreamRederisr=new InputStreamReader(System.in);
-	    BufferedReaderEntrada=new BufferedReader(isr);
-	    Cadena=Entrada.readLine();*/
+{ 
+  public static String dato ()
+  { 
+    String cadena = "";
+    try
+    {   
+      /*InputstreamRederisr=new InputStreamReader(System.in);
+      BufferedReaderEntrada=new BufferedReader(isr);
+       Cadena=Entrada.readLine();*/
 
-	    //Otra alternativapara declarar la Entrada de Datos
-	    BufferedReader Entrada=new BufferedReader(new InputStreamReader (System.in));
-	    cadena=Entrada.readLine();
-	}
-	catch (IOException e)
-	{System.err.println ("Error:" + e.getMessage ());
-	}
-	return cadena;
+      //Otra alternativapara declarar la Entrada de Datos
+      BufferedReader Entrada=new BufferedReader(new InputStreamReader (System.in));
+      cadena=Entrada.readLine();
     }
+    catch (IOException e)
+    {System.err.println ("Error:" + e.getMessage ());
+    }
+    return cadena;
+  }
+
 
 
     public static short datoShort ()

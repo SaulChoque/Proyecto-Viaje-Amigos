@@ -37,24 +37,27 @@ public class ArchivoOT {
             arch.close();
         }
     }
-    void adicionar() throws FileNotFoundException, IOException
+    void adicionar(OperadorTurismo x) throws FileNotFoundException, IOException
     {
-        Scanner sc=new Scanner(System.in);
-        ObjectOutputStream archt=new ObjectOutputStream(new FileOutputStream("tempViejas.obj"));
-        ObjectInputStream arch=new ObjectInputStream(new FileInputStream(this.nombre));
-        //OperadorTurismo vx
-        try{
-            do{
-                //vx=new OperadorTurismo();
-                //vx.leer();
-                //arch.writeObject(vx);
-                System.out.println("Desea seguir añadiendo  Viajes (y/n): ");
-            }while(sc.nextLine().charAt(0)=='s');
-                
-        }catch(Exception a){
-
-        }finally{
-            arch.close();
-        }        
+        ObjectOutputStream archi1=new ObjectOutputStream(new FileOutputStream("architempo.obj"));
+        ObjectInputStream archi = new ObjectInputStream(new FileInputStream(this.nombre));
+        OperadorTurismo opx;
+        try
+        {    
+            while(true){
+                opx=(OperadorTurismo)archi.readObject();
+                archi1.writeObject(opx);
+            } 
+        }
+        catch(Exception e)
+        {
+            archi1.writeObject(x);
+            archi1.close();
+            archi.close();
+            File farchi=new File(this.nombre);
+            File farchi1=new File("architempo.obj");
+            farchi1.renameTo(farchi);
+            System.out.println("obj adicionado ");
+        }
     }
 }
