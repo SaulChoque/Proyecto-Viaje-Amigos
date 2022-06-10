@@ -1,18 +1,30 @@
 public class Transporte {
-    protected String horaS, horaL; 
-    protected String origen, destino;
+    protected String horaSal, horaLleg; 
+    protected Ubicacion origen, destino;
 
     public Transporte(){
-        horaS="8:00 AM";
-        horaL="8:00 PM";
+        horaSal="";
+        horaLleg="";
+        origen=new Ubicacion();
+        destino=new Ubicacion();
     }
 
-    public Transporte(String a){
-
+    public Transporte(String a, String b, Ubicacion c, Ubicacion d){
+        horaSal=a;
+        horaLleg=b;
+        origen=c;
+        destino=d;
     }
-
-    public Transporte(int a){
-    
-    
-}
+    public String getHoraSal() {
+        return horaSal;
+    }
+    public String getHoraLleg() {
+        return horaLleg;
+    }
+    public Ubicacion getOrigen() {
+        return origen;
+    }
+    public Ubicacion getDestino() {
+        return destino;
+    }
 }
