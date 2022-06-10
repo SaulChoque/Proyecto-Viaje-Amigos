@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Amigo extends Persona{
 
@@ -6,18 +6,14 @@ public class Amigo extends Persona{
 	
 	public void leer() 
 	{
-		Scanner lee = new Scanner(System.in);
+		super.leer();
+		//Scanner lee = new Scanner(System.in);
+		System.out.println("Introdusca el telefono");
+		this.telefono = Leer.datoInt();
 	}
 	public void mostrar() 
 	{
-		
-	}
-	public void lector() 
-	{
-		
-	}
-	public void escritor() 
-	{
-		
+		super.mostrar();
+		System.out.println("Telefono: "+this.telefono);
 	}
 }

@@ -23,12 +23,4 @@ public class Viaje {
     {
 		
 	}
-    public void lector() 
-    {
-		
-	}
-    public void escritor() 
-    {
-		
-	}
 }
