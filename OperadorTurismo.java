@@ -138,7 +138,7 @@ public class OperadorTurismo {
                 }
         }
     }
-    public  void añadirUbicacion(Ubicacion ubi)
+    public  void anadirUbicacion(Ubicacion ubi)
     {
         setDireccion(ubi);
     }
