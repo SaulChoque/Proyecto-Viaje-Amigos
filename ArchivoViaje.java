@@ -26,7 +26,8 @@ public class ArchivoViaje {
         ObjectOutputStream arch=new ObjectOutputStream(new FileOutputStream(this.nombre));
         //Vieja vx
         try{
-            while(true){
+            while(true)
+            {
                 //vx=new Viaje();
                 //vx=(Viaje) arch.readObject();
                 //vx.mostrar();

@@ -33,8 +33,8 @@ public class Ubicacion {
     }
     public  Ubicacion()
     {
-    departamento="la paz";
-    zona="obrajes";
+        departamento="la paz";
+        zona="obrajes";
     }
     public  Ubicacion(String depa,String zon)
     {
@@ -48,9 +48,9 @@ public class Ubicacion {
     public  void leer()
     {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Añadir departamento");
+        System.out.println("AÃ±adir departamento");
         departamento=sc.next();
-        System.out.println("Añadir zona");
+        System.out.println("AÃ±adir zona");
         zona=sc.next();
     }
 }
