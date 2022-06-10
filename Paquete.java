@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 public class Paquete {
     private String codigo;
@@ -35,7 +33,7 @@ public Paquete(String a, int b, int c, Hospedaje f){
     }
 }
 
-public void leer() throws FileNotFoundException, IOException{
+public void leer() {
     String a="";
     codigo=Leer.dato();
     precio=Leer.datoInt();
@@ -46,12 +44,12 @@ public void leer() throws FileNotFoundException, IOException{
     do{
         System.out.println("No Incluye"); 
         noIncluye.add(Leer.dato());
-    }while(System.in.read()==115);
+    }while(Leer.datoChar()=='s');
     
     do{
         System.out.println("Incluye"); 
         incluye.add(Leer.dato());
-    }while(System.in.read()==115);
+    }while(Leer.datoChar()=='s');
 }
 
 public void motrar(){
