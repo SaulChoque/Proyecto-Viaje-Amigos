@@ -54,7 +54,7 @@ public class ArchivoViaje {
         {
             do{
                 vx=new Viaje();
-                vx.leerAmigos();
+                vx.leerFechaAmigos();
                 archi1.writeObject(vx);
                 System.out.print("|| Desea seguir añadiendo registros? (s/n) => ");
             }while(System.in.read()==115);

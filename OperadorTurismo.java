@@ -1,19 +1,10 @@
-
-import proyectomenfy.Ubicacion;
-import proyectomenfy.paquete;
-
-
-/**
- *
- * @author HP 2022
- */
 public class OperadorTurismo {
     
     private String nombre;
     private String descripcion;
     private Ubicacion direccion;
     private int telefono;
-    paquete paquetes[]=new paquete[20];
+    Paquete paquetes[]=new Paquete[20];
     private int nroPaquetes;
 
     /**
@@ -85,7 +76,7 @@ public class OperadorTurismo {
         direccion=new Ubicacion();
         telefono=2830973;
         for (int i = 1; i < 19+1; i++) {
-            paquetes[i]=new paquete();
+            paquetes[i]=new Paquete();
         }
     
         nroPaquetes=3;
@@ -97,7 +88,7 @@ public class OperadorTurismo {
       
         telefono=tele;
         for (int i = 1; i < 19+1; i++) {
-            paquetes[i]=new paquete();
+            paquetes[i]=new Paquete();
         }
         nroPaquetes=nro;
          direccion=new Ubicacion();
