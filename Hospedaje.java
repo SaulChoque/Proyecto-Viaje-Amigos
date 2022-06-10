@@ -1,5 +1,4 @@
 
-import proyectomenfy.Ubicacion;
 
 public class Hospedaje {
     private String nombre;

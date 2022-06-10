@@ -9,11 +9,11 @@ public class Persona {
 	public void leer() 
 	{
 		//Scanner lee = new Scanner(System.in);
-		System.out.print("Introdusca el nombre =>");
+		System.out.print("Introdusca el nombre => ");
 		this.nombre = Leer.dato();
-		System.out.print("Introdusca C.I =>");
+		System.out.print("Introdusca C.I => ");
 		this.ci = Leer.datoInt();
-		System.out.println("Introdusca el genero(Masculino'm'/Femenino'f')");
+		System.out.println("Introdusca el genero(Masculino'm'/Femenino'f') => ");
 		this.genero = Leer.dato();
 	}
 	public void mostrar() 

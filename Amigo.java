@@ -8,7 +8,7 @@ public class Amigo extends Persona{
 	{
 		super.leer();
 		//Scanner lee = new Scanner(System.in);
-		System.out.println("Introdusca el telefono");
+		System.out.println("Introdusca el telefono => ");
 		this.telefono = Leer.datoInt();
 	}
 	public void mostrar() 
