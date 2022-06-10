@@ -1,4 +1,6 @@
-import java.util.Scanner;
+
+import proyectomenfy.Leer;
+
 public class Ubicacion {
     
     private String departamento;
@@ -33,8 +35,8 @@ public class Ubicacion {
     }
     public  Ubicacion()
     {
-        departamento="la paz";
-        zona="obrajes";
+    departamento="la paz";
+    zona="obrajes";
     }
     public  Ubicacion(String depa,String zon)
     {
@@ -47,10 +49,10 @@ public class Ubicacion {
     }
     public  void leer()
     {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("AÃ±adir departamento");
-        departamento=sc.next();
-        System.out.println("AÃ±adir zona");
-        zona=sc.next();
+       
+        System.out.println("Añadir departamento");
+        departamento=Leer.dato();
+        System.out.println("Añadir zona");
+        zona=Leer.dato();
     }
 }
