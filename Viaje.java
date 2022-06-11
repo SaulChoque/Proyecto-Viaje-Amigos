@@ -88,7 +88,7 @@ public class Viaje implements Serializable{
 	}
     public void seleccionarPaq(String x) 
     {
-    	
+    	this.operador
 	}
 
 	
