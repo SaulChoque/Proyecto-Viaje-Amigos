@@ -11,7 +11,16 @@ public class Viaje implements Serializable{
     private ArchivoOT operador;
     private Paquete paquete;
     
-	
+	public Viaje(){
+		fechaInicio="";
+		fechaFinal="";
+		nroAmigos=0;
+		precioTotal=0;
+		for (int i = 0; i <20; i++) {
+			this.amigos[i]=new Amigo();
+		}
+	}
+
 	public void leerFechaAmigos() 
     {
     	System.out.print("Introdusca la fecha de inicio del viaje (DD/MM/AA) => ");

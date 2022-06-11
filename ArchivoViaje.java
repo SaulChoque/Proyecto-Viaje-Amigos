@@ -38,27 +38,21 @@ public class ArchivoViaje {
     }
     public void adicionar() throws FileNotFoundException, IOException
     {
-        ObjectOutputStream archi1=new ObjectOutputStream(new FileOutputStream("architempo.obj"));
-        ObjectInputStream archi = new ObjectInputStream(new FileInputStream(this.nombre));
+        //ObjectInputStream archi = new ObjectInputStream(new FileInputStream(this.nombre));
+        ObjectOutputStream archi=new ObjectOutputStream(new FileOutputStream(this.nombre));
         Viaje vx;
         try
         {    
-            while(true){
-                vx=(Viaje)archi.readObject();
-                archi1.writeObject(vx);
-            } 
+                do{
+                    vx=new Viaje();
+                    vx.leerFechaAmigos();
+                    archi.writeObject(vx);
+                    System.out.print("|| Desea seguir añadiendo registros? (s/n) => ");
+                }while(Leer.datoChar()=='s');
         }
         catch(Exception e)
-        {
-            do{
-                vx=new Viaje();
-                vx.leerFechaAmigos();
-                archi1.writeObject(vx);
-                System.out.print("|| Desea seguir añadiendo registros? (s/n) => ");
-            }while(System.in.read()==115);
-        }
+        {}
         finally{
-            archi1.close();
             archi.close();
             File farchi=new File(this.nombre);
             File farchi1=new File("architempo.obj");
@@ -66,5 +60,4 @@ public class ArchivoViaje {
             System.out.println("obj adicionado ");
         }
     }
-
 }

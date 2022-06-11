@@ -6,6 +6,13 @@ public class Persona implements Serializable{
 	protected String nombre,genero;
 	protected int ci;
 	
+	public Persona(){
+		nombre="";
+		genero="";
+		ci=0;
+	}
+
+
 	public void leer() 
 	{
 		//Scanner lee = new Scanner(System.in);

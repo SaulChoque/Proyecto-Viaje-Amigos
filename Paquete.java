@@ -52,16 +52,17 @@ public class Paquete implements Serializable{
     }
 
     public void mostrar(){
+        System.out.println("\n -Paquete: "+this.codigo);
         System.out.println("Codigo: "+codigo+" || Precio: "+precio);
         tranIda.mostrar();
         tranVuelta.mostrar();
         hosp.mostrar();
         destino.mostrar();
         for (String cadena: incluye) {
-            System.out.println(cadena);
+            System.out.println("\t-"+cadena);
         }
         for (String cadena: noIncluye) {
-            System.out.println(cadena);
+            System.out.println("\t-"+cadena);
         }
     }
 

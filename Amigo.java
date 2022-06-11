@@ -2,8 +2,13 @@
 import java.io.Serializable;
 public class Amigo extends Persona implements Serializable{
 
+	
 	private int telefono;
 	
+	public Amigo(){
+		super();
+		telefono=0;
+	}
 	
 	public void leer() {
 		super.leer();

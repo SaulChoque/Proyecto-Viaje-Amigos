@@ -58,6 +58,8 @@ public class ArchivoOT {
             System.out.println("obj adicionado ");
         }
     }
+    /*
+     
     public void buscDestino(String x, String y) throws IOException, ClassNotFoundException
     {
         ObjectInputStream arch = new ObjectInputStream(new FileInputStream(nombre));
@@ -71,7 +73,7 @@ public class ArchivoOT {
                 opx.destino(ux);
             }
         }catch(Exception a){
-
+            
         }finally{
             arch.close();
         }
@@ -79,6 +81,7 @@ public class ArchivoOT {
             System.out.println("|| No Existe un paquete con dicho desino!!!");
         }
     }
+    */
     public void buscNom(String x) throws IOException, ClassNotFoundException
     {
         ObjectInputStream arch = new ObjectInputStream(new FileInputStream(nombre));
