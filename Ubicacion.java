@@ -1,7 +1,6 @@
+import java.io.Serializable;
 
-
-
-public class Ubicacion {
+public class Ubicacion implements Serializable{
     
     private String departamento;
     private String zona;
@@ -50,9 +49,9 @@ public class Ubicacion {
     public  void leer()
     {
        
-        System.out.println("Añadir departamento");
+        System.out.println("Aï¿½adir departamento");
         departamento=Leer.dato();
-        System.out.println("Añadir zona");
+        System.out.println("Aï¿½adir zona");
         zona=Leer.dato();
     }
 }

@@ -1,4 +1,6 @@
-public class OperadorTurismo {
+import java.io.Serializable;
+
+public class OperadorTurismo implements Serializable{
     
     private String nombre;
     private String descripcion;
@@ -62,16 +64,14 @@ public class OperadorTurismo {
        descripcion=des;
       
         telefono=tele;
-        for (int i = 1; i < 19+1; i++) {
-            paquetes[i]=new Paquete();
-        }
+        for (int i=0; i<20; i++) paquetes[i]=new Paquete();
         nroPaquetes=nro;
          direccion=new Ubicacion();
         direccion.leer();
     }
     public void mostrar()
     {
-        System.out.println(" nombre: "+this.nombre+" || descripcion: "+getDescripcion()+" || telefono: "+getTelefono()+" || numero de paquetes:"+getNroPaquetes()+" || direccion: ");
+        System.out.println(" nombre: "+this.nombre+" || descripcion: "+this.descripcion+" || telefono: "+this.telefono+" || numero de paquetes:"+this.nroPaquetes+" || direccion: ");
         direccion.mostrar();
         for (int i=0; i<getNroPaquetes(); i++) {
             paquetes[i].mostrar();
@@ -99,7 +99,7 @@ public class OperadorTurismo {
         return this.seleccionarCod();
     }
 
-    
+
     public Paquete seleccionarCod(){
         System.out.print("Inserte el codigo del paquete que quiera seleccionar => ");
         String cod=Leer.dato();

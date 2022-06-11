@@ -1,4 +1,5 @@
-public class Aereo extends Transporte{
+import java.io.Serializable;
+public class Aereo extends Transporte implements Serializable{
     private String aereolina, codigo;
 
     public Aereo(){

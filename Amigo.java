@@ -1,6 +1,6 @@
 //import java.util.Scanner;
-
-public class Amigo extends Persona{
+import java.io.Serializable;
+public class Amigo extends Persona implements Serializable{
 
 	private int telefono;
 	

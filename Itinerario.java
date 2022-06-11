@@ -1,10 +1,10 @@
-public class Itinerario {
+import java.io.Serializable;
+public class Itinerario implements Serializable{
     private int dia, nroActividades;
     private String actividad[][] = new String [20][2];
     
     public Itinerario() {
         dia=0;
-
         //f1=hora
         //f2=descripcion
         //Salar de Uyuni

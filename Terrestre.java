@@ -1,4 +1,6 @@
-public class Terrestre extends Transporte{
+import java.io.Serializable;
+
+public class Terrestre extends Transporte implements Serializable{
     private String tipoV, tipoA, nombre, matricula;
     
     public Terrestre() {

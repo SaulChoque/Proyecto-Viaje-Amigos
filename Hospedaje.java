@@ -1,6 +1,6 @@
+import java.io.Serializable;
 
-
-public class Hospedaje {
+public class Hospedaje implements Serializable{
     private String nombre;
     private Ubicacion direccion;
 

@@ -1,6 +1,7 @@
 //import java.util.Scanner;
+import java.io.Serializable;
 
-public class Persona {
+public class Persona implements Serializable{
 
 	protected String nombre;
 	protected int ci;

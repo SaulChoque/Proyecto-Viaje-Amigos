@@ -1,4 +1,5 @@
-public class Transporte {
+import java.io.Serializable;
+public class Transporte implements Serializable{
     protected String horaSal, horaLleg; 
     protected Ubicacion origen, destino;
 

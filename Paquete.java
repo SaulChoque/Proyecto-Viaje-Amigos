@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import java.io.Serializable;
 
-public class Paquete {
+public class Paquete implements Serializable{
     private String codigo;
     private int precio, nroItinerario;
     private Transporte tranIda, tranVuelta;
