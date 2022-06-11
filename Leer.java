@@ -1,4 +1,8 @@
+
 /*Programa Leer,para datos de tipo Short,Int,Float,Double,Long*/
+import java.util.Scanner;
+
+
 
 import java.io.*;
 public class Leer
@@ -22,6 +26,12 @@ public class Leer
     return cadena;
   }
 
+  public static char datoChar ()
+  { 
+    Scanner sc=new Scanner(System.in);
+    String cadena=sc.nextLine();
+    return cadena.charAt(0);
+  }
 
 
     public static short datoShort ()
