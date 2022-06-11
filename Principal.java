@@ -20,32 +20,23 @@ public class Principal {
 			switch(op) {
 
 				case '1':
-					Console.WriteLine();
-					kkk.crear();
+					System.out.println();
+					vx.crear();
 					break;
 				case '2':
-					Console.WriteLine();
+
+					System.out.println();
 					kkk.adicionar();
 					break;
+
 				case '3':
-					Console.WriteLine();
-					kkk.listar();
+					System.out.print("\n\nIntroduzca el codigo del paquete a seleccionar => ");
+					vx.seleccionarPaq(Leer.dato());
 					break;
-				case '4':
-					Console.WriteLine();
-					kkk.capacidad();
-					break;
-				case '5':
-					Console.WriteLine();
-					kkk.buscarAsiento();
-					break;
-				case '6':
-					Console.Write("\nInserte la hora a buscar => ");
-					kkk.eliminar(Console.ReadLine());
-					break;
+				
 				default:
-					Console.WriteLine();
-					Console.WriteLine("\n El programa ya termino !!!");
+					System.out.println();
+					System.out.println("\n El programa ya termino !!!");
 					sw = false;
 					break;
 			}
