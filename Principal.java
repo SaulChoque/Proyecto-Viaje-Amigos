@@ -6,19 +6,14 @@ public class Principal {
 		//JOSE MENU
 		bool sw = true;
 		while( sw ) {
-			Console.WriteLine("\n ");
-			Console.WriteLine(" MENU ");
-			Console.WriteLine(" ==== ");
-			Console.WriteLine(" ");
-			Console.WriteLine("1. CREAR ");
-			Console.WriteLine("2. ADICION ");
-			Console.WriteLine("3. LISTADO ");
-			Console.WriteLine("4. INCISO B) ");
-			Console.WriteLine("5. INCISO C) ");
-			Console.WriteLine("6. INCISO D) ");
-			Console.WriteLine("0. SALIR ");
-			Console.WriteLine(" ");
-			Console.Write("INTRODUCIR UNA OPCION => ");
+			System.out.println("\n ");
+			System.out.println(" MENU DE VIAJES ");
+			System.out.println(" ==== ");
+			System.out.println(" ");
+			System.out.println("1. CREAR VIAJE ");
+			System.out.println("2. MOSTRAR PAQUETE ");
+			System.out.println("3. SELECCIONAR PAQUETE ");
+			
 			
 			//SAUL SWITCH
 			switch( Console.ReadKey().KeyChar ) {
