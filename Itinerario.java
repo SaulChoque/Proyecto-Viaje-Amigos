@@ -16,4 +16,10 @@ public class Itinerario implements Serializable{
         actividad[nroActividades][0]=b;
         nroActividades++;
     }
+
+    //Getters & Setters
+    public String[][] getActividad() {return actividad;}
+    public String getItinerarioDia(int a) {return actividad[a][0]+" "+actividad[a][1];}
+    public int getDia() {return dia;}
+    
 }

@@ -1,0 +1,10 @@
+    public  OperadorTurismo(){
+        nombre="Sport Turing";
+        descripcion="dedicados a el vieje y deportes extremos en el oriente boliviano creando momentos inolvidables";
+        direccion=new Ubicacion();
+        telefono=2830973;
+        for (int i=0; i<20; i++) {
+            paquetes[i]=new Paquete();
+        }
+        nroPaquetes=3;
+    }
