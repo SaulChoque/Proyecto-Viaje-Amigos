@@ -1,3 +1,5 @@
+import java.io.Serializable;
+
 public class Viaje {
     private String fechaInicio;
     private String fechaFinal;
