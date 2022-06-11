@@ -3,6 +3,7 @@ public class Principal {
 
 	public static void main(String[] args) 
 	{
+
 		//JOSE MENU
 		bool sw = true;
 		while( sw ) {
@@ -16,26 +17,39 @@ public class Principal {
 			
 			
 			//SAUL SWITCH
-			switch( Console.ReadKey().KeyChar ) {
+			switch(Leer.datoChar()) {
 
 				case '1':
-					Console.WriteLine();
-					kkk.crear();
+					System.out.println();
+					vx.crear();
 					break;
 				case '2':
-					Console.WriteLine();
+					System.out.println();
 					kkk.adicionar();
 					break;
+					
+
+
+
+
+
+
+
+
+
+
 				case '3':
-					Console.WriteLine();
-					kkk.listar();
+					System.out.println();
+					System.out.print(" Inserte codigo del paquete a seleccionar => ");
+					String x=Leer.dato();
+					vx.seleccionarPaq(x);
 					break;
 				case '4':
-					Console.WriteLine();
+					System.out.println();
 					kkk.capacidad();
 					break;
 				case '5':
-					Console.WriteLine();
+					System.out.println();
 					kkk.buscarAsiento();
 					break;
 				case '6':
@@ -43,8 +57,8 @@ public class Principal {
 					kkk.eliminar(Console.ReadLine());
 					break;
 				default:
-					Console.WriteLine();
-					Console.WriteLine("\n El programa ya termino !!!");
+					System.out.println();
+					System.out.println("\n El programa ya termino !!!");
 					sw = false;
 					break;
 			}
