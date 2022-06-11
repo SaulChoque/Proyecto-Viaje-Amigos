@@ -4,6 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.Scanner;
+
+import javax.xml.crypto.Data;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -58,6 +61,28 @@ public class ArchivoOT {
             File farchi1=new File("architempo.obj");
             farchi1.renameTo(farchi);
             System.out.println("obj adicionado ");
+        }
+    }
+    Paquete buscDestino(String x, String y) throws IOException, ClassNotFoundException
+    {
+        ObjectInputStream arch = new ObjectInputStream(new FileInputStream(nombre));
+        OperadorTurismo opx;
+        Paquete px=new Paquete();
+        Ubicacion ux=new Ubicacion(x,y);
+        try{
+            while(true){
+                opx=new OperadorTurismo();
+                opx=(OperadorTurismo) arch.readObject();
+                px=opx.destino(ux);
+            }
+        }catch(Exception a){
+
+        }finally{
+            arch.close();
+        }
+        System.out.print("|| Desea seleccionar este paquete? (s/n) => ");
+        if(Leer.datoChar()=='s'){
+            return px;
         }
     }
 }
