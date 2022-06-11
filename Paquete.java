@@ -52,7 +52,7 @@ public void leer() {
     }while(Leer.datoChar()=='s');
 }
 
-public void motrar(){
+public void mostrar(){
     System.out.println("codigo:"+codigo);
     System.out.println("precio:"+precio);
     System.out.println("nroItinerario:"+nroItinerario);
