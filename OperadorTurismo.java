@@ -4,7 +4,7 @@ public class OperadorTurismo {
     private String descripcion;
     private Ubicacion direccion;
     private int telefono;
-    paquete paquetes[]=new paquete[20];
+    aquete paquetes[]=new paquete[20];
     private int nroPaquetes;
 
     /**
