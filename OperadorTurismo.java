@@ -83,29 +83,27 @@ public class OperadorTurismo implements Serializable{
         for (int i=0; i<getNroPaquetes(); i++) paquetes[i].mostrarResumen();
     }
 
-    public Paquete destino(Ubicacion des)
+    public void destino(Ubicacion des)
     {
         for (int i=0; i < getNroPaquetes(); i++) {
             if (paquetes[i].getDestino().equals(des)) paquetes[i].mostrarResumen();
         }
-        return this.seleccionarCod();
+        //return this.seleccionarCod();
     }
 
-    public Paquete mostPrecio(int x)
+    public void mostPrecio(int x)
     {
         for (int i = 1; i < getNroPaquetes()+1; i++) {
             if (paquetes[i].getPrecio()==x) mostrarResumen();
         }
-        return this.seleccionarCod();
+        //return this.seleccionarCod();
     }
 
 
-    public Paquete seleccionarCod(){
-        System.out.print("Inserte el codigo del paquete que quiera seleccionar => ");
-        String cod=Leer.dato();
+    public Paquete seleccionarCod(String x){
         Paquete paqueteSeleccionado=new Paquete();
         for (int i=0; i<getNroPaquetes(); i++) {
-            if (paquetes[i].getCodigo().equals(cod)) paqueteSeleccionado=paquetes[i];
+            if (paquetes[i].getCodigo().equals(x)) paqueteSeleccionado=paquetes[i];
         }
         return (paqueteSeleccionado);
     }
@@ -120,13 +118,15 @@ public class OperadorTurismo implements Serializable{
     }
 
     public void setDireccion(Ubicacion direccion) {
+        
         this.direccion = direccion;
     }
-
+    /*
     public void leer()
     {
-         for (int i = 1; i < getNroPaquetes()+1; i++) {
+        for (int i = 1; i < getNroPaquetes()+1; i++) {
             paquetes[i].leer();
         }
     }
+    */
 }

@@ -36,7 +36,8 @@ public Paquete(String a, int b, int c, Hospedaje f){
     }
     destino=new Ubicacion();
 }
-
+/*
+ 
 public void leer() {
     String a="";
     codigo=Leer.dato();
@@ -56,6 +57,7 @@ public void leer() {
     }while(Leer.datoChar()=='s');
 }
 
+*/
 public void mostrar(){
     System.out.println("codigo:"+codigo);
     System.out.println("precio:"+precio);

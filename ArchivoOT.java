@@ -58,7 +58,7 @@ public class ArchivoOT {
             System.out.println("obj adicionado ");
         }
     }
-    Paquete buscDestino(String x, String y) throws IOException, ClassNotFoundException
+    void buscDestino(String x, String y) throws IOException, ClassNotFoundException
     {
         ObjectInputStream arch = new ObjectInputStream(new FileInputStream(nombre));
         OperadorTurismo opx;
@@ -68,7 +68,7 @@ public class ArchivoOT {
             while(true){
                 opx=new OperadorTurismo();
                 opx=(OperadorTurismo) arch.readObject();
-                px=opx.destino(ux);
+                opx.destino(ux);
             }
         }catch(Exception a){
 
@@ -78,12 +78,6 @@ public class ArchivoOT {
         if(px.equals(new Paquete())){
             System.out.println("|| No Existe un paquete con dicho desino!!!");
         }
-        else{        
-            System.out.print("|| Desea seleccionar este paquete? (s/n) => ");
-            if(Leer.datoChar()=='s'){
-                return px;
-            }
-        }return new Paquete();
     }
     void buscNom(String x) throws IOException, ClassNotFoundException
     {
@@ -103,7 +97,7 @@ public class ArchivoOT {
             arch.close();
         }
     }
-    Paquete buscPrecio(int x) throws IOException, ClassNotFoundException
+    void buscPrecio(int x) throws IOException, ClassNotFoundException
     {
         ObjectInputStream arch = new ObjectInputStream(new FileInputStream(nombre));
         OperadorTurismo opx;
@@ -112,7 +106,7 @@ public class ArchivoOT {
             while(true){
                 opx=new OperadorTurismo();
                 opx=(OperadorTurismo) arch.readObject();
-                px=opx.mostPrecio(x);
+                opx.mostPrecio(x);
             }
         }catch(Exception a){
 
@@ -122,6 +116,26 @@ public class ArchivoOT {
         if(px.equals(new Paquete())){
             System.out.println("|| No Existe un paquete con dicho precio!!!");
         }
+    }
+    Paquete seleccionarPaq(String x) throws IOException, ClassNotFoundException
+    {
+        ObjectInputStream arch = new ObjectInputStream(new FileInputStream(nombre));
+        OperadorTurismo opx;
+        Paquete px=new Paquete();
+        try{
+            while(true){
+                opx=new OperadorTurismo();
+                opx=(OperadorTurismo) arch.readObject();
+                px=opx.seleccionarCod(x);
+            }
+        }catch(Exception a){
+
+        }finally{
+            arch.close();
+        }
+        if(px.equals(new Paquete())){
+            System.out.println("|| No Existe un paquete con dicho codigo!!!");
+        }
         else{        
             System.out.print("|| Desea seleccionar este paquete? (s/n) => ");
             if(Leer.datoChar()=='s'){
@@ -129,5 +143,4 @@ public class ArchivoOT {
             }
         }return new Paquete();
     }
-
 }

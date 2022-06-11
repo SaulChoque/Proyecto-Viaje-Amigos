@@ -4,30 +4,19 @@ public class Hospedaje implements Serializable{
     private String nombre;
     private Ubicacion direccion;
 
-    /**
-     * @return the nombre
-     */
     public String getNombre() {
         return nombre;
     }
 
-    /**
-     * @param nombre the nombre to set
-     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    /**
-     * @return the direccion
-     */
+
     public Ubicacion getDireccion() {
         return direccion;
     }
 
-    /**
-     * @param direccion the direccion to set
-     */
     public void setDireccion(Ubicacion direccion) {
         this.direccion = direccion;
     }

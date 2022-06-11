@@ -28,6 +28,6 @@ public class Aereo extends Transporte implements Serializable{
     }
     public void mostrar(){
         super.mostrar();
-
+        
     }
 }

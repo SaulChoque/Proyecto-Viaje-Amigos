@@ -1,0 +1,112 @@
+public class Itinerario2 {
+    private int dia;
+    private String actividad[][] = new String [20][2];
+    
+    public Itinerario2() {
+        dia=1;
+
+        //f1=hora
+        //f2=descripcion
+        //Huayna Potosi
+        //actividad[1][1]="10:00";
+        //actividad[1][2]="Saliendo del Hotel hasta la plataforma de Zongo";
+        //actividad[2][1]="15:00";
+        //actividad[2][2]="Tendremos una paractica en el glaciar antiguo y la asistencia de un guia experto";
+    }
+
+    public Itinerario2(int a){
+        dia=2;
+
+        //actividad[3][1]="10:00";
+        //actividad[3][2]="Empezamos con el ascenso hasta campo alto 5200m hasta llegar a un refugio, despues de un breve descanso revisamos el equipo de montaña, cenaremos temprano";
+    }
+
+        public Itinerario2(String a){
+        dia=3;
+
+        //actividad[4][1]="06:00";
+        //actividad[4][2]="Despues de un desayuno muy temprano empezamos nuestro ascenso hacia la cara Este, para luego continuar el ascenso hasta la cumbre del Huayna Potosi (6088m) son seis horas de ascenso";
+        //actividad[5][1]="13:00";
+        //actividad[5][2]="Descendemos hasta campo Alto y despues hasta campo altoy despues hasta campo base";
+    }
+    void mostrar(){
+       
+    }
+    
+}
+/*
+ 
+public Itinerario(String a){
+    dia=0;
+    
+        actividad[9][1]="05:00";
+        actividad[9][2]="Salir de la Laguna Colorada para ver los Geysers con el salir del sol";
+        actividad[10][1]="08:00";
+        actividad[10][2]="Visitar las aguas termales y fumarolas";
+        actividad[11][1]="13:00";
+        actividad[11][2]="Terminar el Tour en la Laguna Verde";
+        actividad[12][1]="16:00";
+        actividad[12][2]="retorno a Uyuni";
+        actividad[13][1]="18:30";
+        actividad[13][2]="Arribo a Uyuni";
+    }
+    */
+        /*
+         
+        actividad[7][1]="10:00";
+        actividad[7][2]="Salir del Hotel para poder visitar los diferentes lagos como ser: Laguna Kañapa, Laguna Hedionda, Laguna Chiarkota, Arbol de Piedra";
+        actividad[8][1]="19:00";
+        actividad[8][2]="Finalmente llegaremos hasta la laguna Colorada donde dormiremos en un refugio";
+        */
+public class Itinerario3 {
+    private int dia;
+    private String actividad[][] = new String [20][2];
+    
+    public Itinerario3() {
+        dia=1;
+
+        //f1=hora
+        //f2=descripcion
+        //Huayna Potosi
+        actividad[1][1]="10:30";
+        actividad[1][2]="visita al cementerio de trenes";
+        actividad[2][1]="11:00";
+        actividad[2][2]="Ir a Colchani para observar artesanias de Sal";
+        actividad[3][1]="12:00";
+        actividad[3][2]="Ir hacia el hotel de Sal";
+        actividad[4][1]="12:30";
+        actividad[4][2]="Almuerzo";
+        actividad[5][1]="15:00";
+        actividad[5][2]="Visitar la isla del pescado con cactus gigantes, desde el cual podran observar el Salar en su totalidad";
+        actividad[6][1]="19:30";
+        actividad[6][2]="Volver al hospedaje en el Hotel de Sal y cena";
+    }
+
+    public Itinerario3(int a){
+        dia=2;
+
+        actividad[7][1]="10:00";
+        actividad[7][2]="Salir del Hotel para poder visitar los diferentes lagos como ser: Laguna Kañapa, Laguna Hedionda, Laguna Chiarkota, Arbol de Piedra";
+        actividad[8][1]="19:00";
+        actividad[8][2]="Finalmente llegaremos hasta la laguna Colorada donde dormiremos en un refugio";
+    }
+
+        public Itinerario3(String a){
+        dia=3;
+
+        actividad[9][1]="05:00";
+        actividad[9][2]="Salir de la Laguna Colorada para ver los Geysers con el salir del sol";
+        actividad[10][1]="08:00";
+        actividad[10][2]="Visitar las aguas termales y fumarolas";
+        actividad[11][1]="13:00";
+        actividad[11][2]="Terminar el Tour en la Laguna Verde";
+        actividad[12][1]="16:00";
+        actividad[12][2]="retorno a Uyuni";
+        actividad[13][1]="18:30";
+        actividad[13][2]="Arribo a Uyuni";
+    }
+    void mostrar(){
+       
+    }
+    
+}
