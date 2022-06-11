@@ -77,13 +77,18 @@ public class Viaje implements Serializable{
     {
 		System.out.println("Fecha de Inicio del Viaje: "+this.fechaInicio);
 		System.out.println("Fecha Final del Viaje: "+this.fechaFinal);
-		
-		
+		if (paquete.equals(new Paquete())) {
+			System.out.println("No hay ningun paquete seleccionado");
+		}
+		else
+		{
+			this.paquete.mostrar();
+		}
 		System.out.println("Precio Total: Bs. "+this.precioTotal);
 	}
-    public void seleccionarOT() 
+    public void seleccionarPaq(String x) 
     {
-		
+    	
 	}
 
 	
