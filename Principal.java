@@ -36,10 +36,10 @@ public class Principal {
 		a1.paquetes[3].addTrasporte(new Terrestre("15:45","17:23",new Ubicacion("La Paz","Sagarnaga"),new Ubicacion("Oruro","Terminal"),"MiniBus","Leito","FKF258"),new Terrestre("19:00","22:00",new Ubicacion("Oruro","Terminal Buses"),new Ubicacion("El Alto","Terminal"),"MiniBus","Normal","THQ825"));
 
 		//david
-		a2.paquetes[0].addTrasporte(new Terrestre(),new Terrestre());
-		a2.paquetes[1].addTrasporte(new Terrestre(),new Terrestre());
-		a2.paquetes[2].addTrasporte(new Terrestre(),new Terrestre());
-		a2.paquetes[3].addTrasporte(new Aereo(),new Aereo());
+		a2.paquetes[0].addTrasporte(new Terrestre("08:00","14:00",new Ubicacion("La paz"," el alto"),new Ubicacion("coroico","La Paz"),"miniobus"," regular "," 2989 LPCS"),new Terrestre("23:59","7:00",new Ubicacion("Coroico"," La paz"),new Ubicacion("Terminal ","La Paz"),"miniobus"," regular "," 2989 LPCS"));
+		a2.paquetes[1].addTrasporte(new Terrestre("12:00","17:00",new Ubicacion("Terminal La paz","La paz",new Ubicacion("Prov Illimani","La paz")."bus Cama","haciento cama","4089 JKPO")),new Terrestre("20:00","03:00",new Ubicacion("Prov Illimani","Terminal La paz")."bus Cama","haciento cama","3045 JKPO"));
+		a2.paquetes[2].addTrasporte(new Terrestre("10:00","15:00",new Ubicacion("Terminal La paz","Chapare Cochabamba"),"bus normal","haciento normal","3244 YUOO"),new Terrestre("21:00","10:00",new Ubicacion("Terminal CochaBamba","Terminal La paz"),"bus Cama","haciento cama","3920 YHJA"));
+		a2.paquetes[3].addTrasporte(new Aereo("05:30","10:00",new Ubicacion("La Paz","El Alto"),new Ubicacion("Tarija ","Tarija"),"TAM","C001"),new Aereo("4:30","19:00",new Ubicacion("Tarija","Tarija"),new Ubicacion("La paz","El alto"),"TAM","D023"));
 
 		//?
 		a3.paquetes[0].addTrasporte(new Terrestre("16:45","19:23",new Ubicacion("La Paz","Sagarnaga"),new Ubicacion("La Paz","Yungas"),"MiniBus","Normal","JYU286"),new Terrestre("19:00","22:00",new Ubicacion("La Paz","Terminal Buses"),new Ubicacion("El Alto","Terminal"),"MiniBus","Normal","KJD258"));
