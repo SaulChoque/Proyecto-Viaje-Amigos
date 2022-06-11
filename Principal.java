@@ -67,6 +67,7 @@ public class Principal {
 
 //JOSE MENU
 int op=0;
+int op1=0;
 try {
 	do		
 	{
@@ -87,11 +88,30 @@ try {
 					AV.crear();
 					//aaa
 						break;
+<<<<<<< Updated upstream
 					case '2':
 						System.out.println();
 						
 						
 					case '3':
+=======
+						case '2':
+						do
+						{
+						System.out.println("\n");
+						System.out.println(" MENU BUSCAR ");
+						System.out.println("1. LISTAR");
+						System.out.println("2. BUSCAR POR DESTINO");
+						System.out.println("3. BUSCAR POR NOMBRE");
+						System.out.println("4. BUSCAR POR PRECIO");
+						
+						op1 = Leer.datoInt();
+						switch(op1){
+							
+						}
+						}while(op>4)
+						case '3':
+>>>>>>> Stashed changes
 						System.out.print("\n\nIntroduzca el codigo del paquete a seleccionar => ");
 						vx.seleccionarPaq(Leer.dato());
 						break;
