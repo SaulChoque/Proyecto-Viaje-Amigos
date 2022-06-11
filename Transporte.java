@@ -27,4 +27,21 @@ public class Transporte {
     public Ubicacion getDestino() {
         return destino;
     }
+
+    public void setDestino(Ubicacion destino) {
+        this.destino = destino;
+    }
+    public void setHoraLleg(String horaLleg) {
+        this.horaLleg = horaLleg;
+    }
+    public void setHoraSal(String horaSal) {
+        this.horaSal = horaSal;
+    }
+    public void setOrigen(Ubicacion origen) {
+        this.origen = origen;
+    }
+
+    public void mostrar(){
+
+    }
 }
