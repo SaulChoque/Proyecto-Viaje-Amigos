@@ -95,8 +95,17 @@ try {
 					AV.crear();
 					//aaa
 						break;
+<<<<<<< Updated upstream
 
 
+=======
+					case '2':
+						System.out.println();
+						
+						
+					case '3':
+=======
+>>>>>>> Stashed changes
 						case '2':
 						do
 						{
@@ -112,6 +121,10 @@ try {
 							
 						}
 						}while(op>4)
+<<<<<<< Updated upstream
+=======
+						case '3':
+>>>>>>> Stashed changes
 
 						System.out.print("\n\nIntroduzca el codigo del paquete a seleccionar => ");
 						vx.seleccionarPaq(Leer.dato());
