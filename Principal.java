@@ -55,11 +55,11 @@ public class Principal {
 
 
 
+		AOT.adicionar(a1);
+		AOT.adicionar(a2);
+		AOT.adicionar(a3);
+		AOT.adicionar(a4);
 
-
-
-
-		AOT.adicionar(x);
 
 
 
