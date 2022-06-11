@@ -4,7 +4,8 @@ public class OperadorTurismo {
     private String descripcion;
     private Ubicacion direccion;
     private int telefono;
-    aquete paquetes[]=new paquete[20];
+    Paquete paquetes[]=new Paquete[20];
+    //vamooos 
     private int nroPaquetes;
 
     /**
@@ -76,7 +77,7 @@ public class OperadorTurismo {
         direccion=new Ubicacion();
         telefono=2830973;
         for (int i = 1; i < 19+1; i++) {
-            paquetes[i]=new paquete();
+            paquetes[i]=new Paquete();
         }
     
         nroPaquetes=3;
@@ -88,7 +89,7 @@ public class OperadorTurismo {
       
         telefono=tele;
         for (int i = 1; i < 19+1; i++) {
-            paquetes[i]=new paquete();
+            paquetes[i]=new Paquete();
         }
         nroPaquetes=nro;
          direccion=new Ubicacion();
@@ -112,7 +113,7 @@ public class OperadorTurismo {
     public  Object destino(Ubicacion des)
     {
         String cod="";
-        paquete paqueteSeleccionado=new paquete();
+        Paquete paqueteSeleccionado=new Paquete();
         
         for (int i = 1; i < getNroPaquetes()+1; i++) {
             
@@ -142,7 +143,7 @@ public class OperadorTurismo {
                 }
         }
     }
-    public  void añadirUbicacion(Ubicacion ubi)
+    public  void anadirUbicacion(Ubicacion ubi)
     {
         setDireccion(ubi);
     }
