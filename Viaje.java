@@ -57,6 +57,7 @@ public class Viaje implements Serializable{
     public void seleccionarPaq(String x) throws IOException, ClassNotFoundException //SeleccionarOT
     {
 		this.paquete=this.operador.seleccionarPaq(x);
+		this.precioTotal= paquete.getPrecio()*nroAmigos;
 	}
 	
 	//Getters & Setters	
