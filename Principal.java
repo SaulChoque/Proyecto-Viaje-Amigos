@@ -22,7 +22,7 @@ public class Principal {
 				case '1':
 					System.out.println();
 					vx.crear();
-					//a
+					//aaa
 					break;
 				case '2':
 
