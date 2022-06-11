@@ -1,6 +1,8 @@
 import java.io.Serializable;
 
+
 public class Viaje implements Serializable{
+
     private String fechaInicio;
     private String fechaFinal;
     private int nroAmigos; 
