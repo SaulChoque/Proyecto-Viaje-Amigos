@@ -83,20 +83,20 @@ try {
 				switch(op) {
 					
 					case '1':
-					System.out.println();
+						System.out.println();
 					AV.crear();
 					//aaa
 						break;
-						case '2':
+					case '2':
 						System.out.println();
 						
 						
-						case '3':
+					case '3':
 						System.out.print("\n\nIntroduzca el codigo del paquete a seleccionar => ");
 						vx.seleccionarPaq(Leer.dato());
 						break;
 						
-						default:
+					default:
 						System.out.println();
 						System.out.println("\n El programa ya termino !!!");
 						sw = false;
