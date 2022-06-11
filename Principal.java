@@ -31,7 +31,7 @@ public class Principal {
 
 		//saul
 		a1.paquetes[0].addTrasporte(new Aereo("05:30","10:00",new Ubicacion("La Paz","El Alto"),new Ubicacion("Santa Cruz","Santa Cruz"),"BOA","A001"),new Aereo("06:30","10:30",new Ubicacion("Santa Cruz","Santa Cruz"),new Ubicacion("La Paz","El Alto"),"AMAZONAS","HJ5001"));
-		a1.paquetes[1].addTrasporte(new Terrestre(),new Terrestre("05:30","10:00",new Ubicacion("La Paz","El Alto"),new Ubicacion("Santa Cruz","Santa Cruz")));
+		a1.paquetes[1].addTrasporte(new Terrestre(),new Terrestre("05:30","10:00",new Ubicacion("La Paz","Terminal La Paz"),new Ubicacion("Chuquisaca","Centro"),"Bus","Leito","JDK258"));
 		a1.paquetes[2].addTrasporte(new Aereo(),new Aereo());
 		a1.paquetes[3].addTrasporte(new Terrestre(),new Terrestre());
 
