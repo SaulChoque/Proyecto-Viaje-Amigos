@@ -37,25 +37,22 @@ public class ArchivoOT {
     }
     public void adicionar(OperadorTurismo x) throws FileNotFoundException, IOException
     {
-        ObjectOutputStream archi1=new ObjectOutputStream(new FileOutputStream("architempo.obj"));
-        ObjectInputStream archi = new ObjectInputStream(new FileInputStream(this.nombre));
+        ObjectOutputStream archi=new ObjectOutputStream(new FileOutputStream(this.nombre));
+        
         OperadorTurismo opx;
         try
         {    
-            while(true){
-                opx=(OperadorTurismo)archi.readObject();
-                archi1.writeObject(opx);
-            } 
+            archi.writeObject(x);
         }
         catch(Exception e)
-        {
-            archi1.writeObject(x);
-            archi1.close();
+        {}
+        finally{
+            archi.close();
             archi.close();
             File farchi=new File(this.nombre);
             File farchi1=new File("architempo.obj");
             farchi1.renameTo(farchi);
-            System.out.println("obj adicionado ");
+            System.out.println("obj adicionado ");      
         }
     }
     /*

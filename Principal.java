@@ -66,13 +66,13 @@ try {
 									vxa.listar();
 									break;
 								case 2:
-									System.out.println("\n Insterte el nombre a buscar");
+									System.out.println("\n Insterte el nombre a buscar:");
 									System.out.print("Ingrese Departamento => ");
 									vxa.buscNom(Leer.dato());
 									break;
 								case 3:
-									System.out.println("\n Insterte el nombre a precio");
-									System.out.print("Ingrese precio => ");
+									System.out.println("\n Insterte el precio a buscar:");
+									System.out.print("precio => ");
 									vxa.buscPrecio(Leer.datoInt());	
 									break;
 							}
@@ -80,6 +80,7 @@ try {
 						break;
 					case 5:
 						System.out.print("Inserte codigo a buscar => ");
+						
 					}
 				}while(op<5);
 			}catch (Exception e) {
