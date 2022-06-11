@@ -53,7 +53,15 @@ public class Principal {
 		a4.paquetes[2].addTrasporte(new Aereo("06:00","11:00",new Ubicacion("La Paz","El Alto"),new Ubicacion("Santa Cruz","Santa Cruz"),"TAM","DT01"),new Aereo("08:30","12:00",new Ubicacion("Santa Cruz","Santa Cruz"),new Ubicacion("La Paz","El Alto"),"TAM","UA01"));
 		a4.paquetes[3].addTrasporte(new Terrestre("11:00","14:00",new Ubicacion("La Paz","La Paz"),new Ubicacion("Oruro","Uyuni"),"Bus","Bus/Cama","DT58G5"),new Terrestre("08:00","10:00",new Ubicacion("Oruro","Uyuni"),new Ubicacion("La Paz","La Paz"),"Bus","Bus/Cama","364ASU1"));
 
-		
+
+		Itinerario i1=new Itinerario(1);
+		i1.setActividad(actividad);
+
+
+
+
+		a1.paquetes[0].setItinerarioDia();
+
 
 
 
