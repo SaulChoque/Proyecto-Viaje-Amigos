@@ -12,4 +12,21 @@ public class Aereo extends Transporte{
         aereolina=ae;
         codigo=co;
     }
+
+    public String getAereolina() {
+        return aereolina;
+    }
+    public String getCodigo() {
+        return codigo;
+    }
+    public void setAereolina(String aereolina) {
+    this.aereolina = aereolina;
+    }
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+    public void mostrar(){
+        super.mostrar();
+
+    }
 }
