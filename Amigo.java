@@ -4,6 +4,13 @@ public class Amigo extends Persona{
 
 	private int telefono;
 	
+	public int getTelefono() {
+		return telefono;
+	}
+	public void setTelefono(int telefono) {
+		this.telefono = telefono;
+	}
+	
 	public void leer() 
 	{
 		super.leer();

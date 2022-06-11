@@ -1,5 +1,5 @@
 
-import proyectomenfy.Leer;
+
 
 public class Ubicacion {
     

@@ -7,7 +7,50 @@ public class Viaje {
     private Paquete paquete;
     private int precioTotal;
     
-    public void leerFechaAmigos() 
+    public String getFechaInicio() {
+		return fechaInicio;
+	}
+	public void setFechaInicio(String fechaInicio) {
+		this.fechaInicio = fechaInicio;
+	}
+	public String getFechaFinal() {
+		return fechaFinal;
+	}
+	public void setFechaFinal(String fechaFinal) {
+		this.fechaFinal = fechaFinal;
+	}
+	public int getNroAmigos() {
+		return nroAmigos;
+	}
+	public void setNroAmigos(int nroAmigos) {
+		this.nroAmigos = nroAmigos;
+	}
+	public Amigo[] getAmigos() {
+		return amigos;
+	}
+	public void setAmigos(Amigo[] amigos) {
+		this.amigos = amigos;
+	}
+	public ArchivoOT getOperador() {
+		return operador;
+	}
+	public void setOperador(ArchivoOT operador) {
+		this.operador = operador;
+	}
+	public Paquete getPaquete() {
+		return paquete;
+	}
+	public void setPaquete(Paquete paquete) {
+		this.paquete = paquete;
+	}
+	public int getPrecioTotal() {
+		return precioTotal;
+	}
+	public void setPrecioTotal(int precioTotal) {
+		this.precioTotal = precioTotal;
+	}
+	
+	public void leerFechaAmigos() 
     {
     	System.out.print("Introdusca la fecha de inicio del viaje (DD/MM/AA) => ");
     	this.fechaInicio = Leer.dato();

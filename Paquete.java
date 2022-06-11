@@ -76,6 +76,7 @@ public void mostrarResumen(){
 
 }
 
+
 public Ubicacion getDestino() {
     return destino;
 }
@@ -136,5 +137,6 @@ public void setTranVuelta(Transporte tranVuelta) {
 public void setDestino(Ubicacion destino) {
     this.destino = destino;
 }
+
 
 }

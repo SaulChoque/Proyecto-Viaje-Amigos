@@ -6,6 +6,25 @@ public class Persona {
 	protected int ci;
 	protected String genero;
 	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public int getCi() {
+		return ci;
+	}
+	public void setCi(int ci) {
+		this.ci = ci;
+	}
+	public String getGenero() {
+		return genero;
+	}
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+	
 	public void leer() 
 	{
 		//Scanner lee = new Scanner(System.in);

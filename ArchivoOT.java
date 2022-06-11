@@ -22,14 +22,14 @@ public class ArchivoOT {
 
     void listar() throws IOException, ClassNotFoundException
     {
-        ObjectOutputStream arch=new ObjectOutputStream(new FileOutputStream(this.nombre));
+        ObjectInputStream arch = new ObjectInputStream(new FileInputStream(nombre));
         
-        //OperadorTurismo vx
+        OperadorTurismo opx;
         try{
             while(true){
-                //vx=new OperadorTurismo();
-                //vx=(OperadorTurismo) arch.readObject();
-                //vx.mostrar();
+                opx=new OperadorTurismo();
+                opx=(OperadorTurismo) arch.readObject();
+                opx.mostrar();
             }
         }catch(Exception a){
 
