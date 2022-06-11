@@ -42,11 +42,11 @@ public class Principal {
 		a2.paquetes[3].addTrasporte(new Aereo(),new Aereo());
 
 		//?
-		a3.paquetes[0].addTrasporte(new Terrestre(),new Terrestre());
-		a3.paquetes[1].addTrasporte(new Terrestre(),new Terrestre());
-		a3.paquetes[2].addTrasporte(new Aereo(),new Aereo());
-		a3.paquetes[3].addTrasporte(new Terrestre(),new Terrestre());
-
+		a3.paquetes[0].addTrasporte(new Terrestre("16:45","19:23",new Ubicacion("La Paz","Sagarnaga"),new Ubicacion("La Paz","Yungas"),"MiniBus","Leito","FKF258"),new Terrestre("19:00","22:00",new Ubicacion("Oruro","Terminal Buses"),new Ubicacion("El Alto","Terminal"),"MiniBus","Normal","THQ825"));
+		a3.paquetes[1].addTrasporte(new Terrestre("07:35","11:00",new Ubicacion("La Paz","Terminal La Paz"),new Ubicacion("La Paz","Yungas"),"Bus","Leito","JDK258"),new Terrestre("19:00","22:00",new Ubicacion("Choquisaca","Terminal Buses"),new Ubicacion("El Alto","Terminal"),"Bus","Leito","IOR256"));
+		a3.paquetes[2].addTrasporte(new Aereo("06:30","11:00",new Ubicacion("La Paz","El Alto Aeropuerto"),new Ubicacion("Santa Cruz","Santa Cruz"),"BOA","A001"),new Aereo("06:30","10:30",new Ubicacion("Santa Cruz","Santa Cruz"),new Ubicacion("La Paz","El Alto"),"AMAZONAS","HJ5001"));
+		a3.paquetes[3].addTrasporte(new Terrestre("08:35","11:00",new Ubicacion("La Paz","Terminal La Paz"),new Ubicacion("La Paz","Yungas"),"Bus","Leito","JDK258"),new Terrestre("19:00","22:00",new Ubicacion("Choquisaca","Terminal Buses"),new Ubicacion("El Alto","Terminal"),"Bus","Leito","IOR256"));
+		
 		//Jose
 		a4.paquetes[0].addTrasporte(new Terrestre(),new Terrestre());
 		a4.paquetes[1].addTrasporte(new Terrestre(),new Terrestre());
