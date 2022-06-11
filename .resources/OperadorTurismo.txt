@@ -8,3 +8,363 @@
         }
         nroPaquetes=3;
     }
+
+ LECTURA PAQUETE
+AX01
+200
+ Inserte no incluye: 
+ =>
+Comida
+(s/n)=> s
+ => 
+Agua
+(s/n)=> s
+ => 
+Toallas
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Transporte
+(s/n)=> s
+ => 
+Guia
+(s/n)=> n
+leer destino =>        
+Anadir departamento => Santa Cruz
+Anadir zona => Santa Cruz
+
+        LECTURA PAQUETE
+AX02
+250
+ Inserte no incluye: 
+ =>
+Snacks
+(s/n)=> s
+ => 
+Guia
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Transporte personal
+(s/n)=> n
+leer destino => 
+Anadir departamento => Chuquisaca 
+Anadir zona => Centro
+
+        LECTURA PAQUETE
+AX03
+300
+ Inserte no incluye: 
+ =>
+Agua
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Transporte
+(s/n)=> n
+leer destino => 
+Anadir departamento => Beni
+Anadir zona => Aeropuerto 
+
+        LECTURA PAQUETE
+AX04
+150
+ Inserte no incluye: 
+ =>
+Guia
+(s/n)=> s
+ => 
+Snacks
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Transporte
+(s/n)=> s
+ => 
+Hospedaje
+(s/n)=> n
+leer destino => 
+Anadir departamento => Oruro
+Anadir zona => Terminal
+
+- P2 asdasasasasasasasasasasasasas
+
+        LECTURA PAQUETE
+BX01
+200
+ Inserte no incluye: 
+ =>
+Agua
+(s/n)=> s
+ => 
+Entrada
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Guia
+(s/n)=> s
+ => 
+Bicicletas
+(s/n)=> s
+ => 
+Gatorade
+(s/n)=> n
+leer destino => 
+Anadir departamento => La Paz
+Anadir zona => Coroico
+
+        LECTURA PAQUETE
+BX02
+300
+ Inserte no incluye: 
+ =>
+Entrada
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Agua 
+(s/n)=> s
+ => 
+Guia
+(s/n)=> s
+ => 
+Materiales
+(s/n)=> n
+leer destino => 
+Anadir departamento => La Paz
+Anadir zona => Illimani
+
+        LECTURA PAQUETE
+BX03
+400
+ Inserte no incluye: 
+ =>
+Entrada
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Agua
+(s/n)=> s
+ => 
+Guia
+(s/n)=> s
+ => 
+Materiales
+(s/n)=> n
+leer destino => 
+Anadir departamento => Cochabamba
+Anadir zona => Chapare
+
+        LECTURA PAQUETE
+BX04
+400
+ Inserte no incluye: 
+ =>
+Agua
+(s/n)=> s
+ => 
+Entrada
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Vino
+(s/n)=> s
+ => 
+Guia
+(s/n)=> s
+ => 
+Materiales
+(s/n)=> n
+leer destino => 
+Anadir departamento => Tarija
+Anadir zona => Tarija
+
+- P3
+
+        LECTURA PAQUETE
+CX01
+250
+ Inserte no incluye: 
+ =>
+Comida
+(s/n)=> s
+ => 
+Snacks
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Transporte
+(s/n)=> s
+ => 
+Guias
+(s/n)=> s
+ => 
+Poleras    
+(s/n)=> n
+leer destino => 
+Anadir departamento => La Paz
+Anadir zona => Coroico
+
+        LECTURA PAQUETE
+CX02
+300
+ Inserte no incluye: 
+ =>
+Agua
+(s/n)=> s
+ => 
+Snacks
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Comida
+(s/n)=> s
+ => 
+Transporte
+(s/n)=> n
+leer destino => 
+Anadir departamento => La Paz
+Anadir zona => Yungas
+
+        LECTURA PAQUETE
+CX03
+400
+ Inserte no incluye: 
+ =>
+Polera
+(s/n)=> s
+ => 
+Guia
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Snacks
+(s/n)=> s
+ => 
+Souvenirs
+(s/n)=> s
+ => 
+Bebidas 
+(s/n)=> n
+leer destino => 
+Anadir departamento => Santa Cruz
+Anadir zona => Santa Cruz
+
+        LECTURA PAQUETE
+CX04
+500
+ Inserte no incluye: 
+ =>
+Snacks
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Entrada
+(s/n)=> s
+ => 
+Poleras
+(s/n)=> s
+ => 
+Transporte 
+(s/n)=> s
+ => 
+Hotel
+(s/n)=> s
+ => 
+souvenirs
+(s/n)=> n
+leer destino => 
+Anadir departamento => La Paz
+Anadir zona => Yungas
+
+- P4
+
+        LECTURA PAQUETE
+DX01
+350
+ Inserte no incluye: 
+ =>
+Hospedaje
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Comida
+(s/n)=> s
+ => 
+Guias
+(s/n)=> n
+leer destino => 
+Anadir departamento => Cochabamba
+Anadir zona => Totora
+
+        LECTURA PAQUETE
+DX02
+400
+ Inserte no incluye: 
+ =>
+Entrada
+(s/n)=> s
+ => 
+Agua
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Bicicletas
+(s/n)=> s
+ => 
+Guia
+(s/n)=> n
+leer destino => 
+Anadir departamento => La Paz
+Anadir zona => Coroico
+
+        LECTURA PAQUETE
+DX03 
+300
+ Inserte no incluye: 
+ =>
+Entrada
+(s/n)=> s
+ => 
+Bebidas
+(s/n)=> s
+ => 
+Toallas
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Poleras
+(s/n)=> s
+ => 
+Bicicletas
+(s/n)=> s
+ => 
+Guias
+(s/n)=> n
+leer destino => 
+Anadir departamento => Santa Cruz
+Anadir zona => Santa Cruz
+
+        LECTURA PAQUETE
+DX04
+500
+ Inserte no incluye: 
+ =>
+Abrigos
+(s/n)=> s
+ => 
+Seguro
+(s/n)=> n
+ Inserte  incluye: 
+ =>
+Guia
+(s/n)=> s
+ => 
+Bicicleta
+(s/n)=> s
+ => 
+Transporte
+(s/n)=> n
+leer destino => 
+Anadir departamento => Oruro
+Anadir zona => Uyuni

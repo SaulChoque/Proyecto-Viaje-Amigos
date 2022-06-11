@@ -22,7 +22,6 @@ public class OperadorTurismo implements Serializable{
         for (int i=0; i<20; i++) paquetes[i]=new Paquete();
         this.nroPaquetes=nro;
         this.direccion=new Ubicacion();
-        this.direccion.leer();
     }
     public void mostrar(){
         System.out.println("nombre: "+this.nombre+" || descripcion: "+this.descripcion+" || telefono: "+this.telefono+" || numero de paquetes:"+this.nroPaquetes+" || direccion: ");

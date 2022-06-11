@@ -7,7 +7,8 @@ public class Paquete implements Serializable{
     private Transporte tranIda, tranVuelta;
     private Hospedaje hosp;
     private Ubicacion destino;
-    private ArrayList<String> incluye,noIncluye;
+    private ArrayList<String> incluye=new ArrayList<String>();
+    private ArrayList<String> noIncluye=new ArrayList<String>();
 
     public Paquete(){
         codigo="";
@@ -28,6 +29,7 @@ public class Paquete implements Serializable{
     }
 
     public void leer() {
+        System.out.println("\n\tLECTURA PAQUETE");
         String a="";
         codigo=Leer.dato();
         precio=Leer.datoInt();

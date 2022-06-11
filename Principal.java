@@ -6,9 +6,14 @@ public class Principal {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException
 	{
+
+		System.out.println("Lextura aaaa\n");
 		ArchivoOT AOT = new ArchivoOT("Operadores.obj");
 		ArchivoViaje AV = new ArchivoViaje("Viajes.obj");
 
+		AOT.crear();
+
+		
 		OperadorTurismo a1=new OperadorTurismo("Turismo Bolivia", "Turismo al interior del pais", 22813405, 4);
 		OperadorTurismo a2=new OperadorTurismo("EXTREMESPORTS", "Turismo de riesgo ", 77242197, 4);
 		OperadorTurismo a3=new OperadorTurismo("AKAPACHA", "Operadora de turismo desde 2003", 71248627, 4);
@@ -20,13 +25,15 @@ public class Principal {
 		a4.anadirUbicacion(new Ubicacion("Cochabamba","La Chimba"));
 		
 		//paquete lectura
-		System.out.println("- P1");
+		System.out.println("\n- P1");
 		a1.leer();
-		System.out.println("- P2");
+
+
+		System.out.println("\n- P2 asdasasasasasasasasasasasasas");
 		a2.leer();
-		System.out.println("- P3");
+		System.out.println("\n- P3");
 		a3.leer();
-		System.out.println("- P4");
+		System.out.println("\n- P4");
 		a4.leer();
 
 		//saul
@@ -60,7 +67,7 @@ public class Principal {
 		AOT.adicionar(a3);
 		AOT.adicionar(a4);
 
-
+		System.out.println("AHUEVO");
 
 
 /* 
