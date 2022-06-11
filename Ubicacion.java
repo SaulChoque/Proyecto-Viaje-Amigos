@@ -32,4 +32,5 @@ public class Ubicacion implements Serializable{
     public void setDepartamento(String departamento) {this.departamento = departamento;}
     public String getZona() {return zona;}
     public void setZona(String zona) {this.zona = zona;}
+    public String getDireccion() {return departamento+" "+zona;}
 }

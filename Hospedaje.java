@@ -5,7 +5,7 @@ public class Hospedaje implements Serializable{
     private Ubicacion direccion;
 
     public Hospedaje(){
-        this.nombre="hotel transilvania";
+        this.nombre="";
         this.direccion=new Ubicacion();
     }
 
@@ -15,8 +15,7 @@ public class Hospedaje implements Serializable{
     }
 
     public void mostrar(){
-        System.out.println(" Nombre "+getNombre()+" Direccion ");
-        direccion.mostrar();
+        System.out.println(" Nombre: "+this.nombre+" || Direccion: "+this.direccion.getDireccion());
     }
     
     //Getters & Setters

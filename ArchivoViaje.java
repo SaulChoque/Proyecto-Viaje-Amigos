@@ -19,7 +19,7 @@ public class ArchivoViaje {
         System.out.println("Archivo creado");
     }
 
-    void listar() throws IOException, ClassNotFoundException
+    public void listar() throws IOException, ClassNotFoundException
     {
         ObjectInputStream arch=new ObjectInputStream(new FileInputStream(this.nombre));
         Viaje vx;
@@ -36,7 +36,7 @@ public class ArchivoViaje {
             arch.close();
         }
     }
-    void adicionar() throws FileNotFoundException, IOException
+    public void adicionar() throws FileNotFoundException, IOException
     {
         ObjectOutputStream archi1=new ObjectOutputStream(new FileOutputStream("architempo.obj"));
         ObjectInputStream archi = new ObjectInputStream(new FileInputStream(this.nombre));

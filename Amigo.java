@@ -4,23 +4,19 @@ public class Amigo extends Persona implements Serializable{
 
 	private int telefono;
 	
-	public int getTelefono() {
-		return telefono;
-	}
-	public void setTelefono(int telefono) {
-		this.telefono = telefono;
-	}
 	
-	public void leer() 
-	{
+	public void leer() {
 		super.leer();
 		//Scanner lee = new Scanner(System.in);
-		System.out.println("Introdusca el telefono => ");
+		System.out.println("Introduzca el telefono => ");
 		this.telefono = Leer.datoInt();
 	}
-	public void mostrar() 
-	{
+	public void mostrar() {
 		super.mostrar();
 		System.out.println("Telefono: "+this.telefono);
 	}
+
+	//Getters & Setters
+	public int getTelefono() {return telefono;}
+	public void setTelefono(int telefono) {this.telefono = telefono;}
 }
