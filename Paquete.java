@@ -70,6 +70,7 @@ public void mostrar(){
         System.out.println(cadena);
       }
 }
+//ciao
 
 public void mostrarResumen(){
     
