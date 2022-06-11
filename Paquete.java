@@ -70,10 +70,10 @@ public void mostrar(){
         System.out.println(cadena);
       }
 }
+//ciao
 
 public void mostrarResumen(){
-    
-
+    System.out.println("Paquete a "+destino.getZona()+" por Bs. "+this.precio);
 }
 
 

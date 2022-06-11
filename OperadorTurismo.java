@@ -80,13 +80,11 @@ public class OperadorTurismo {
     public void mostrarResumen()
     {
         System.out.println(" nombre "+getNombre()+" descripcion "+getDescripcion());
-        for (int i=0; i<getNroPaquetes(); i++) {
-            paquetes[i].mostrarResumen();
-        }
+        for (int i=0; i<getNroPaquetes(); i++) paquetes[i].mostrarResumen();
     }
+
     public Paquete destino(Ubicacion des)
     {
-        
         for (int i=0; i < getNroPaquetes(); i++) {
             if (paquetes[i].getDestino().equals(des)) paquetes[i].mostrarResumen();
         }
@@ -95,12 +93,13 @@ public class OperadorTurismo {
 
     public Paquete mostPrecio(int x)
     {
-
         for (int i = 1; i < getNroPaquetes()+1; i++) {
             if (paquetes[i].getPrecio()==x) mostrarResumen();
         }
         return this.seleccionarCod();
     }
+
+    
     public Paquete seleccionarCod(){
         System.out.print("Inserte el codigo del paquete que quiera seleccionar => ");
         String cod=Leer.dato();
@@ -110,7 +109,7 @@ public class OperadorTurismo {
         }
         return (paqueteSeleccionado);
     }
-    
+
     public  void anadirUbicacion(Ubicacion ubi)
     {
         setDireccion(ubi);
