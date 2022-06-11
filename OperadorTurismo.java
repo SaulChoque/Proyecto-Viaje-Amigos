@@ -107,7 +107,7 @@ public class OperadorTurismo {
     {
         System.out.println(" nombre "+getNombre()+" descripcion "+getDescripcion());
         for (int i = 1; i < getNroPaquetes()+1; i++) {
-            paquetes[i].mostrar();
+            paquetes[i].mostrarResumen();
         }
     }
     public  Object destino(Ubicacion des)

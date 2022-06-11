@@ -73,8 +73,7 @@ public void mostrar(){
 //ciao
 
 public void mostrarResumen(){
-    
-
+    System.out.println("Paquete a "+destino.getZona()+" por Bs. "+this.precio);
 }
 
 
