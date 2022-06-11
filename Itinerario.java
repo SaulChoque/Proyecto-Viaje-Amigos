@@ -13,7 +13,7 @@ public class Itinerario implements Serializable{
 
     public void addItinerario(String a, String b){
         actividad[nroActividades][0]=a;
-        actividad[nroActividades][0]=b;
+        actividad[nroActividades][1]=b;
         nroActividades++;
     }
 
