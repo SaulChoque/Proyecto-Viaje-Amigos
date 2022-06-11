@@ -13,7 +13,7 @@ public class Principal {
 
 		AOT.crear();
 
-		
+
 		OperadorTurismo a1=new OperadorTurismo("Turismo Bolivia", "Turismo al interior del pais", 22813405, 4);
 		OperadorTurismo a2=new OperadorTurismo("EXTREMESPORTS", "Turismo de riesgo ", 77242197, 4);
 		OperadorTurismo a3=new OperadorTurismo("AKAPACHA", "Operadora de turismo desde 2003", 71248627, 4);
@@ -95,13 +95,8 @@ try {
 					AV.crear();
 					//aaa
 						break;
-<<<<<<< Updated upstream
-					case '2':
-						System.out.println();
-						
-						
-					case '3':
-=======
+
+
 						case '2':
 						do
 						{
@@ -117,8 +112,7 @@ try {
 							
 						}
 						}while(op>4)
-						case '3':
->>>>>>> Stashed changes
+
 						System.out.print("\n\nIntroduzca el codigo del paquete a seleccionar => ");
 						vx.seleccionarPaq(Leer.dato());
 						break;
