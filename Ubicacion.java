@@ -21,9 +21,9 @@ public class Ubicacion implements Serializable{
 
     public  void leer()
     {
-        System.out.println("Anadir departamento");
+        System.out.print("Anadir departamento => ");
         departamento=Leer.dato();
-        System.out.println("Anadir zona");
+        System.out.print("Anadir zona => ");
         zona=Leer.dato();
     }
 

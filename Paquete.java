@@ -35,28 +35,30 @@ public class Paquete implements Serializable{
         }
         destino=new Ubicacion();
     }
-    /*
-    
+
     public void leer() {
         String a="";
         codigo=Leer.dato();
         precio=Leer.datoInt();
         nroItinerario=Leer.datoInt();
-        for(int i=0; i<nroItinerario; i++){
-            itinerarioDia[i].leer();
-        } 
+        System.out.println(" Inserte no incluye: ");
         do{
-            System.out.println("No Incluye"); 
+            System.out.println(" => "); 
             noIncluye.add(Leer.dato());
+            System.out.print("(s/n)=> ");
         }while(Leer.datoChar()=='s');
         
+        System.out.println(" Inserte  incluye: ");
         do{
-            System.out.println("Incluye"); 
+            System.out.println(" => "); 
             incluye.add(Leer.dato());
+            System.out.print("(s/n)=> ");
         }while(Leer.datoChar()=='s');
+
+        System.out.println("leer destino => ");
+        destino.leer();
     }
 
-    */
     public void mostrar(){
         System.out.println("Codigo: "+codigo+" || Precio: "+precio+" || nroItinerario: "+nroItinerario);
         tranIda.mostrar();
@@ -70,11 +72,24 @@ public class Paquete implements Serializable{
             System.out.println(cadena);
         }
     }
-    //ciao
+
+    public void addIti(String a , String b, int c){
+        this.itinerarioDia[c].addItinerario(a, b);
+    }
 
     public void mostrarResumen(){
         System.out.println("Paquete a "+destino.getZona()+" por Bs. "+this.precio);
     }
+
+    public void addTrasporte(Transporte a, Transporte b){
+        tranIda=a;
+        tranVuelta=b;
+    }
+    public void addHospedaje(Hospedaje a){
+        hosp=a;
+    }
+
+
 
 
     //Getters & Setters
@@ -88,6 +103,7 @@ public class Paquete implements Serializable{
     public int getPrecio() {return precio;}
     public Transporte getTranIda() {return tranIda;}
     public Transporte getTranVuelta() {return tranVuelta;}
+
     public void setPrecio(int precio) {this.precio = precio;}
     public void setCodigo(String codigo) {this.codigo = codigo;}
     public void setHosp(Hospedaje hosp) {this.hosp = hosp;}

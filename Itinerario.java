@@ -21,5 +21,5 @@ public class Itinerario implements Serializable{
     public String[][] getActividad() {return actividad;}
     public String getItinerarioDia(int a) {return actividad[a][0]+" "+actividad[a][1];}
     public int getDia() {return dia;}
-    
+    public void setActividad(String[][] actividad) {this.actividad = actividad;}
 }

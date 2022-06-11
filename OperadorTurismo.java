@@ -57,15 +57,13 @@ public class OperadorTurismo implements Serializable{
         }
         return (paqueteSeleccionado);
     }
-    
-    /*
+
     public void leer()
     {
         for (int i = 1; i < getNroPaquetes()+1; i++) {
             paquetes[i].leer();
         }
     }
-    */
     
     //Getters & Setters
     public String getNombre() {return nombre;}
@@ -73,6 +71,7 @@ public class OperadorTurismo implements Serializable{
     public int getTelefono() {return telefono;}
     public int getNroPaquetes() {return nroPaquetes;}
     public Ubicacion getDireccion() {return direccion;}
+    public Paquete[] getPaquetes() {return paquetes;}
     
     public void setNombre(String nombre) {this.nombre = nombre;} 
     public void setDescripcion(String descripcion) {this.descripcion = descripcion;}  
@@ -80,5 +79,6 @@ public class OperadorTurismo implements Serializable{
     public void setNroPaquetes(int nroPaquetes) {this.nroPaquetes = nroPaquetes;}
     public void anadirUbicacion(Ubicacion ubi){setDireccion(ubi);}  
     public void setDireccion(Ubicacion direccion) {this.direccion = direccion;}
+    public void setPaquetes(Paquete[] paquetes) {this.paquetes = paquetes;}
     
 }
