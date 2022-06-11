@@ -4,7 +4,7 @@ public class OperadorTurismo {
     private String descripcion;
     private Ubicacion direccion;
     private int telefono;
-    Paquete paquetes[]=new Paquete[20];
+    paquete paquetes[]=new paquete[20];
     private int nroPaquetes;
 
     /**
@@ -76,7 +76,7 @@ public class OperadorTurismo {
         direccion=new Ubicacion();
         telefono=2830973;
         for (int i = 1; i < 19+1; i++) {
-            paquetes[i]=new Paquete();
+            paquetes[i]=new paquete();
         }
     
         nroPaquetes=3;
@@ -88,7 +88,7 @@ public class OperadorTurismo {
       
         telefono=tele;
         for (int i = 1; i < 19+1; i++) {
-            paquetes[i]=new Paquete();
+            paquetes[i]=new paquete();
         }
         nroPaquetes=nro;
          direccion=new Ubicacion();
@@ -109,15 +109,28 @@ public class OperadorTurismo {
             paquetes[i].mostrar();
         }
     }
-    public void destino(Ubicacion des)
+    public  Object destino(Ubicacion des)
     {
+        String cod="";
+        paquete paqueteSeleccionado=new paquete();
+        
         for (int i = 1; i < getNroPaquetes()+1; i++) {
             
             if (paquetes[i].getDestino().equals(des))
                 {
-                      mostrarResumen();
+                      paquetes[i].mostrar();
                 }
         }
+        System.out.println("escriba el codigo del  paquete que quiera seleccionar");
+       // cod=Leer.dato();
+        for (int i = 0; i < getNroPaquetes(); i++) {
+            
+            if (paquetes[i].getCodigo().equals(cod))
+                {
+                     paqueteSeleccionado=paquetes[i];
+                }
+        }
+        return (paqueteSeleccionado);
     }
     public void mostPrecio(int x)
     {
@@ -129,7 +142,7 @@ public class OperadorTurismo {
                 }
         }
     }
-    public  void anadirUbicacion(Ubicacion ubi)
+    public  void añadirUbicacion(Ubicacion ubi)
     {
         setDireccion(ubi);
     }
@@ -158,4 +171,3 @@ public class OperadorTurismo {
         }
     }
 }
-
