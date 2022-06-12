@@ -1,8 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-
-
 public class Principal {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException
@@ -11,17 +9,14 @@ public class Principal {
 		System.out.println("Lextura aaaa\n");
 		ArchivoOT vxa = new ArchivoOT("Operadores.obj");
 		ArchivoViaje vx = new ArchivoViaje("Viajes.obj");
-
-
-
-//JOSE MENU
-int op=0;
-int op1=0;
-try {
-	do		
-	{
-		System.out.println("\n ");
-		System.out.println(" MENU DE VIAJES ");
+		//JOSE MENU
+		int op=0;
+		int op1=0;
+		try {
+			do		
+			{
+				System.out.println("\n ");
+				System.out.println(" MENU DE VIAJES ");
 				System.out.println(" ==== ");
 				System.out.println(" ");
 				System.out.println("1. CREAR VIAJE ");
@@ -33,21 +28,18 @@ try {
 				op = Leer.datoInt();
 				//SAUL SWITCH
 				switch(op) {
-					
+							
 					case 1:
 						System.out.println();
 						vx.crear();
-					//aaa
 						break;
 					case 2:
 						System.out.println();
 						vx.listar();
-					//aaa
 						break;
 					case 3:
 						System.out.println();
 						vx.adicionar();
-					//aaa
 						break;
 
 					case 4:
@@ -75,18 +67,16 @@ try {
 									System.out.print("precio => ");
 									vxa.buscPrecio(Leer.datoInt());	
 									break;
-							}
+									}
 						}while(op1<3);
 						break;
 					case 5:
 						System.out.print("Inserte codigo a buscar => ");
-						vx.seleccionarPaq(Leer.dato());
-					}
-				}while(op<5);
-			}catch (Exception e) {
-				System.out.println("error"+e);
-			}
-		}
-		
-	}
+						vx.seleccionarPaq(Leer.dato(),vxa);
+						break;
+				}
+			}while(op<5);
+		}catch (Exception e) {System.out.println("error"+e);}
+	}				
+}
 	

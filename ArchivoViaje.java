@@ -62,10 +62,10 @@ public class ArchivoViaje {
             System.out.println("obj adicionado ");
         }
     }
-    public void seleccionarPaq(String x) throws IOException, ClassNotFoundException
+    public void seleccionarPaq(String x, ArchivoOT y) throws IOException, ClassNotFoundException
     {
         ObjectOutputStream arch=new ObjectOutputStream(new FileOutputStream(this.nombre));
-        temp.seleccionarPaq(x);
+        temp.seleccionarPaq(x,y);
         try{
             arch.writeObject(temp);
         }catch(Exception a){

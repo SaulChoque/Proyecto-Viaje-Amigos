@@ -12,6 +12,7 @@ public class Viaje implements Serializable{
     private Paquete paquete;
     
 	public Viaje(){
+		operador=new ArchivoOT();
 		fechaInicio="";
 		fechaFinal="";
 		nroAmigos=0;
@@ -54,8 +55,9 @@ public class Viaje implements Serializable{
 		System.out.println("Precio Total: Bs. "+this.precioTotal);
 	}
 
-    public void seleccionarPaq(String x) throws IOException, ClassNotFoundException //SeleccionarOT
+    public void seleccionarPaq(String x, ArchivoOT y) throws IOException, ClassNotFoundException //SeleccionarOT
     {
+		operador=y;
 		this.paquete=this.operador.seleccionarPaq(x);
 		this.precioTotal= paquete.getPrecio()*nroAmigos;
 	}
