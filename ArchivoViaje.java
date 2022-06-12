@@ -9,11 +9,13 @@ import java.io.ObjectOutputStream;
 public class ArchivoViaje {
 
     private String nombre;
+    private Viaje temp;
     public ArchivoViaje(){this.nombre="";}
     public ArchivoViaje(String x){this.nombre=x;}
 
     public void crear() throws FileNotFoundException, IOException
     {
+        temp=new Viaje();
         ObjectOutputStream arch=new ObjectOutputStream(new FileOutputStream(this.nombre));
         arch.close();
         System.out.println("Archivo creado");
@@ -60,4 +62,17 @@ public class ArchivoViaje {
             System.out.println("obj adicionado ");
         }
     }
+    public void seleccionarPaq(String x) throws IOException, ClassNotFoundException
+    {
+        ObjectOutputStream arch=new ObjectOutputStream(new FileOutputStream(this.nombre));
+        temp.seleccionarPaq(x);
+        try{
+            arch.writeObject(temp);
+        }catch(Exception a){
+
+        }finally{
+            System.out.println("Se ha agregado el paquete !!!");
+            arch.close();
+        }
+    }   
 }

@@ -80,7 +80,7 @@ try {
 						break;
 					case 5:
 						System.out.print("Inserte codigo a buscar => ");
-						
+						vx.seleccionarPaq(Leer.dato());
 					}
 				}while(op<5);
 			}catch (Exception e) {
